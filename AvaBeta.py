@@ -3,7 +3,7 @@ import talkey
 import os
 import talkey
 import sys
-from chatterbot import ChatBot
+
 
  
 
@@ -11,7 +11,6 @@ def speak(text):
     voice = talkey.Talkey(engine_preference=['pico'])
     voice.say(text+'....')
 
-input_list = ['who are you', 'what can you do', 'turn off the lights', 'list present directory', 'turn off computer']
 
 Ava01 = ChatBot('Ava')
 Ava = aiml.Kernel()
